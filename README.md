@@ -36,7 +36,7 @@ $ systemctl restart battery-notif-d --user
 ```
 
 ## Uninstalling
-run the make uninstall as sudo
+Run the make uninstall as sudo
 ```
 $ sudo make uninstall
 ```
