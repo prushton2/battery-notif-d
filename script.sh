@@ -9,7 +9,7 @@ notified_critical=0;
 while :
 do
 	DATE=`date '+%Y-%m-%d %H:%M:%S'`
-	percentage=10;#$(( $(cat ${battery_dir}charge_now) * 100 / $(cat ${battery_dir}charge_full)));
+	percentage=$(( $(cat ${battery_dir}charge_now) * 100 / $(cat ${battery_dir}charge_full)));
 	
 	if [ $percentage -gt $low_battery_percentage ]; then
 		echo "[${DATE}]: Battery charged above low level" | systemd-cat -p info
