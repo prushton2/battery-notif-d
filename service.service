@@ -1,0 +1,9 @@
+[Unit]
+Description=Notify when the battery is low
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/battery-notif-d.sh
+
+[Install]
+WantedBy=multi-user.target
