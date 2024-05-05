@@ -1,6 +1,5 @@
-# Battery-Notif-D
+# Battery Notification Daemon
 A systemd battery notification daemon to send notifications at low battery levels
-
 ## Installing
 Clone the repo and cd to the repo
 ```
